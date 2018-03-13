@@ -33,6 +33,8 @@
 # Dirs
 build/
 cmake-build-debug/
+.idea/
 
 # Other stuff
 *.kdev4
+

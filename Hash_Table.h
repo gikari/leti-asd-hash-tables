@@ -28,9 +28,11 @@ public:
     static const int len = 100;
 private:
     int try_get_value_from_hash(int hash);
+    void try_add_value(int value);
     void try_remove_value(int value);
 
     std::vector <int*> hash_table_array;
+
     int cap;
 };
 

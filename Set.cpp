@@ -104,7 +104,7 @@ Set Set::operator&(const Set & another) const {
     Set new_set{};
     for (int i = 0; i < container.len; ++i) {
         if (container[i]) {
-            auto element_for_search = *(container[i]);
+            int element_for_search = *(container[i]);
             for (int j = 0; j < another.container.len; ++j) {
                 if (another.container[j] && *(another.container[j]) == element_for_search) {
                     new_set.add(element_for_search);
@@ -124,7 +124,7 @@ Set Set::operator | (const Set & another) const {
     Set new_set{};
     for (int i = 0; i < container.len; ++i) {
         if (container[i]) {
-            auto element_for_search = *(container[i]);
+            int element_for_search = *(container[i]);
             bool is_found = false;
             for (int j = 0; j < another.container.len; ++j) {
                 if (another.container[j] && *(another.container[j]) == element_for_search) {
@@ -150,7 +150,7 @@ Set Set::operator+(const Set & another) const {
 
     for (int i = 0; i < container.len; ++i) {
         if (container[i]) {
-            auto element_for_search = *(container[i]);
+            int element_for_search = *(container[i]);
             for (int j = 0; j < another.container.len; ++j) {
                 if (another.container[j] && *(another.container[j]) == element_for_search) {
                     new_set.remove(element_for_search);

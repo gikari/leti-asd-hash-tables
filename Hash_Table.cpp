@@ -10,14 +10,18 @@ int Hash_Table::hash_function(int value) {
 }
 
 void Hash_Table::add_value(int value) {
-    int hash = hash_function(value);
     try {
-        hash_table_array[hash] = new int(value);
-        cap++;
+        try_add_value(value);
     } catch (std::out_of_range&) {
         std::cerr << "Hash table error: Requested hash out of range!\n";
         throw;
     }
+}
+
+void Hash_Table::try_add_value(int value) {
+    int hash = hash_function(value);
+    hash_table_array[hash] = new int(value);
+    cap++;
 }
 
 int Hash_Table::get_value_from_hash(int hash) {
