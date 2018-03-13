@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+# Dirs
+build/
+cmake-build-debug/
+
+# Other stuff
+*.kdev4
