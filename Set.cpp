@@ -163,4 +163,6 @@ Set Set::operator+(const Set & another) const {
     return new_set;
 }
 
-
+Set::Set (const Set& another) {
+    (*this) = another;
+}

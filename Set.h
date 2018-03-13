@@ -18,7 +18,7 @@ public:
     Set() = default;
     explicit Set ( const char* );
     explicit Set ( const std::string& );
-    // Set ( const Set& );
+    Set ( const Set& );
     // Set ( Set&& );
     ~Set() = default;
     Set& operator = ( const Set& );
