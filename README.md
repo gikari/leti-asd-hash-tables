@@ -1,2 +1,2 @@
-# leti-asd-hash-tables
-Second course, Fourth Semester
+**Not maintauned**
+Newer repository available at: https://gitlab.com/gikari/leti-asd-hash-tables
